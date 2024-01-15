@@ -1,10 +1,3 @@
-<?php
-define('PATH', '../');
-require(PATH . "utils/check_session.php");
-require(PATH . "utils/show_popup.php");
-require(PATH . "utils/menu.php");
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,18 +7,18 @@ require(PATH . "utils/menu.php");
 		content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0"
 		name="viewport">
 	<title>minitalk correction</title>
-	<link rel="shortcut icon" href="<?php echo PATH; ?>assets/favicons/favicon_no-bg.ico" type="image/x-icon">
-	<link href="<?php echo PATH; ?>css/styles.css" media="all" rel="stylesheet" />
-	<link rel="manifest" href="<?php echo PATH; ?>manifest.json">
-	<script src="<?php echo PATH; ?>js/script.js"></script>
-	<script src="<?php echo PATH; ?>js/js"></script>
-	<script src="<?php echo PATH; ?>js/main.js"></script>
+	<link rel="shortcut icon" href="../assets/favicons/favicon_no-bg.ico" type="image/x-icon">
+	<link href="../css/styles.css" media="all" rel="stylesheet" />
+	<link rel="manifest" href="../manifest.json">
+	<script src="../js/script.js"></script>
+	<script src="../js/js"></script>
+	<script src="../js/main.js"></script>
 </head>
 
 <body>
 	<script>
 		if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.register('<?php echo PATH; ?>js/service-worker.js')
+			navigator.serviceWorker.register('../js/service-worker.js')
 				.then(function (registration) {
 					console.log('Service Worker registered successfully:', registration);
 				})
@@ -187,7 +180,7 @@ require(PATH . "utils/menu.php");
 							<li>The Makefile compiles both executables -&gt; 1 point</li>
 							<li>The server name is 'server' and it prints his PID at launch -&gt; 2 points</li>
 							<li>The client name is 'client' and is run as follows:
-								'<?php echo PATH; ?>client PID_SERVER STRING_TO_PASS' -&gt; 2 points</li>
+								'../client PID_SERVER STRING_TO_PASS' -&gt; 2 points</li>
 						</ul>
 
 						<p></p>
